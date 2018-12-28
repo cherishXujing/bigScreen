@@ -1,0 +1,187 @@
+body {
+  width: 100%;
+  min-width: 1200px;
+  box-sizing: border-box;
+  font-family: "Microsoft ya hei";
+}
+
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, form { margin:0;}
+
+ol,ul {
+  margin:0;
+  padding:0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+}
+
+i, em, strong {
+  font-style: normal;
+}
+
+.clear::after {
+  content: '';
+  display: table;
+  clear: both;
+  font-size: 0;
+}
+
+.clear {
+  zoom: 1;
+}
+
+.clear-both {
+  clear: both;
+}
+
+.margin {
+  margin: 0 auto;
+}
+
+.mb-05 {
+  margin-bottom: .5rem;
+}
+
+.mb-08 {
+  margin-bottom: .8rem;
+}
+
+.mb-12 {
+  margin-bottom: 1.2rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.mt-12 {
+  margin-top: 1.2rem;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.padding-rl-03 {
+  padding: 0 .3rem;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.fw-bold {
+  font-weight: bold;
+}
+
+.fw-lighter {
+  font-weight: lighter;
+}
+
+.cursor-p {
+  cursor: pointer;
+}
+
+.pos-rel {
+  position: relative;
+}
+
+.over-hd {
+  overflow: hidden;
+}
+
+.vtc-mid {
+  vertical-align: middle;
+}
+
+.vtc-btm {
+  vertical-align: bottom;
+}
+
+.vtc-sup {
+  vertical-align: super;
+}
+
+.vtc-text-btm {
+  vertical-align: text-bottom;
+}
+
+.text-ct {
+  text-align: center;
+}
+
+.text-lt {
+  text-align: left;
+}
+
+.text-rt {
+  text-align: right;
+}
+
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+[v-cloak] {
+  display: none;
+}
+
+.fw-normal {
+  font-weight: normal;
+}
+
+.fs-07 {
+  font-size: .7rem;
+}
+
+.fs-08 {
+  font-size: .8rem;
+}
+
+.fs-09 {
+  font-size: .9rem;
+}
+
+.fs-1 {
+  font-size: 1rem;
+}
+.fs-12 {
+  font-size: 1.2rem;
+}
+
+.bg-red {
+  background: red;
+}
+
+.bg-blue {
+  background: blue;
+}
+
+.bg-yellow {
+  background: yellow;
+}

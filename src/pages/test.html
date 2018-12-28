@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .circle-container{
+      position: relative;
+      float: left;
+      width: 120px;
+      height: 120px;
+    }
+    .circle-item{
+      position: absolute;
+      left: 10px;
+      top: 10px;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: #59d;
+    }
+    .circle-left-wrap, .circle-right-wrap{
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50px;
+      height: 100px;
+      overflow: hidden;
+    }
+    .circle-right-wrap{
+      left: 50px;
+    }
+    .left, .right {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      background: #ddd;
+    }
+    .left{
+      clip: rect(0, 50px, auto, 0);
+    }
+    .right{
+      clip: rect(0, auto, auto, 50px);
+      left: -50px;
+    }
+    .mask{
+      position: absolute;
+      top: 5px;
+      left:  5px;
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background-color: #fff;
+    }
+  </style>
+</head>
+<body>
+<div class='circle-container'>
+  <div class="circle-item">
+    <div class="circle-left-wrap">
+      <div class="left"></div>
+    </div>
+    <div class="circle-right-wrap">
+      <div class="right" style="transform: rotate(70deg)"></div>
+    </div>
+    <div class='mask'></div>
+  </div>
+</div>
+<div class='circle-container'>
+  <div class="circle-item">
+    <div class="circle-left-wrap">
+      <div class="left" style="transform: rotate(70deg)"></div>
+    </div>
+    <div class="circle-right-wrap">
+      <div class="right" style="transform: rotate(180deg)"></div>
+    </div>
+    <div class='mask'></div>
+  </div>
+</div>
+</body>
+</html>
