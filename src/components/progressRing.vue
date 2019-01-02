@@ -12,7 +12,7 @@
         <span class="fs-09">{{ totalNum }}</span>
       </div>
     </div>
-    <p class="title fs-07">{{ titleTxt }}</p>
+    <p class="title">{{ titleTxt }}</p>
   </div>
 </template>
 <script>
@@ -41,31 +41,32 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-  $size: 80px;
+  $size: 100px;
   @mixin pos ($tp:0, $lt:0) {
     top: $tp;
     left: $lt;
   }
-  @mixin positioning($pos: absolute, $width: 80px, $height: 80px) {
+  @mixin positioning($pos: absolute, $width: 100px, $height: 100px) {
     position: $pos;
     height: $height;
     width: $width;
   }
   .circle-container{
-    @include positioning(relative, $height: 105px);
+    @include positioning(relative, $height: 150px);
   }
   .circle-item{
-    @include positioning ($width: 79px, $height: 79px);
+    @include positioning ($width: 100px, $height: 100px);
+    @include pos($tp: 10px, $lt: 10px);
     border-radius: 50%;
     background-color: #59d;
   }
   .circle-left-wrap, .circle-right-wrap{
-    @include positioning(absolute, 40px);
+    @include positioning(absolute, $width: 50px, $height: 100px);
     @include pos;
     overflow: hidden;
   }
   .circle-right-wrap{
-    left: 40px;
+    left: 50px;
   }
   .left_circle, .right_circle {
     @include positioning;
@@ -78,10 +79,10 @@ export default {
   }
   .right_circle{
     clip: rect(0, auto, auto, 50px);
-    left: -40px;
+    left: -50px;
   }
   .mask{
-    @include positioning($width: 70px, $height: 70px);
+    @include positioning($width: 90px, $height: 90px);
     @include pos($tp: 5px, $lt: 5px);
     border-radius: 50%;
     background-color: #001133;
@@ -89,7 +90,7 @@ export default {
       display: inline-block;
       width: 100%;
       text-align: center;
-      line-height: 70px;
+      line-height: 90px;
       color: #fff;
     }
   }
@@ -98,5 +99,7 @@ export default {
     bottom: 0;
     width: 100%;
     text-align: center;
+    font-size: 18px;
+    left: 8px;
   }
 </style>

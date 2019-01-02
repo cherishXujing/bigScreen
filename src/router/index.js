@@ -12,6 +12,14 @@ export default new Router({
       meta: {
         title: '数据监测'
       }
+    },
+    {
+      path: '/test',
+      name: 'indexTest',
+      component: (resolve) => require(['@/pages/indexTest'], resolve),
+      meta: {
+        title: '数据监测测试'
+      }
     }
   ]
 })

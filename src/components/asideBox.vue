@@ -9,9 +9,9 @@ export default {}
 <style lang="scss" scoped>
   .aside-box {
     position: relative;
-    // padding: 16px 20px;
-    padding: 12px 16px;
+    padding: 12px 30px 12px 15px;
     border: 2px solid rgb(0,34,102);
+    margin-bottom: 15px;
     &:after {
       position: absolute;
       top: -2px;
@@ -20,6 +20,9 @@ export default {}
       width: 40px;
       height: 4px;
       background: #0055ff;
+    }
+    &:nth-child(even) {
+      padding-bottom: 0px;
     }
   }
 </style>
